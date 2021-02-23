@@ -1,0 +1,59 @@
+//SPDX-License-Identifier: MIT
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+pragma solidity ^0.6.0;
+
+contract OwnableStorage{
+    address internal _owner;
+}
+ 
+contract PausableStorage{
+    bool internal _paused;
+}
+
+contract MVTUniswapMiningStorage {
+  using SafeMath for uint256;
+
+  bool constant public isMVTUniswapMining = true;
+  bool public initiated = false;
+
+  // proxy storage
+  address public admin;
+  address public implementation;
+  
+  ERC20 public LPToken;
+  ERC20 public MVTToken;
+  
+  uint public startMiningBlockNum = 0;
+  uint public totalMiningBlockNum = 2400000;
+  uint public endMiningBlockNum = startMiningBlockNum + totalMiningBlockNum;
+  uint public MVTPerBlock = 83333333333333333;
+  
+  uint public constant stakeInitialIndex = 1e36;
+  
+  uint public miningStateBlock = startMiningBlockNum;
+  uint public miningStateIndex = stakeInitialIndex;
+
+
+  
+  struct Stake{
+    uint amount;
+    uint lockedUntil;
+    uint lockPeriod;
+    uint stakePower;
+    bool exists;
+  }
+
+  mapping (address => Stake[]) public stakes;
+  mapping (address => uint) public stakeCount;
+  uint public totalStaked;
+  uint public totalStakedPower;
+
+  mapping (address => uint) public stakeHolders;
+  mapping (address => uint) public stakerPower;
+  mapping (address => uint) public stakerIndexes;
+  mapping (address => uint) public stakerClaimed;
+  uint public totalClaimed;
+
+}
