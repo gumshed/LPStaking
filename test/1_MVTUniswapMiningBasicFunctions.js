@@ -1,42 +1,42 @@
 var BN = web3.utils.BN;
 
-const LPTokenTest = artifacts.require('LPTokenTest');
-const MVTTokenTest = artifacts.require('MVTTokenTest');
+const UniswapV2Pair = artifacts.require('UniswapV2Pair');
+const MovementToken = artifacts.require('MovementToken');
 const MVTUniswapMining = artifacts.require('MVTUniswapMining');
 
-var MVTTokenTestInstance;
-var lpTokenTestInstance;
+var movementTokenInstance;
+var uniswapV2PairInstance;
 
 contract('MVTUniswapMining', (accounts) => {
 
 
     it('should mint 1000000 MVT to Mining Contract', async () => {
-        MVTTokenTestInstance = await MVTTokenTest.deployed();
+        movementTokenInstance = await MovementToken.deployed();
 
         //block 1
-        await MVTTokenTestInstance.mint(MVTUniswapMining.address, "100000000000000000000000000", { from: accounts[0] });
+        await movementTokenInstance.mint(MVTUniswapMining.address, "100000000000000000000000000", { from: accounts[0] });
 
-        const balance = await MVTTokenTestInstance.balanceOf(MVTUniswapMining.address);
+        const balance = await movementTokenInstance.balanceOf(MVTUniswapMining.address);
         assert.equal(balance, "100000000000000000000000000", 'The balance is not 1000000 MVT');
     });
 
     it('should mint 100000 LP Token to the first account', async () => {
-        lpTokenTestInstance = await LPTokenTest.deployed();
+        uniswapV2PairInstance = await UniswapV2Pair.deployed();
 
         //block 2
-        await lpTokenTestInstance.mint(accounts[0], "10000000000000000000000000", { from: accounts[0] });
+        await uniswapV2PairInstance.mint(accounts[0], "10000000000000000000000000", { from: accounts[0] });
 
-        const balance = await lpTokenTestInstance.balanceOf(accounts[0]);
+        const balance = await uniswapV2PairInstance.balanceOf(accounts[0]);
         assert.equal(balance, "10000000000000000000000000", 'The balance is not 100000 LP Token');
     });
 
     it('should approve 5000000 LP Token to Mining address', async () => {
-        lpTokenTestInstance = await LPTokenTest.deployed();
+        uniswapV2PairInstance = await UniswapV2Pair.deployed();
 
         //block 3
-        await lpTokenTestInstance.approve(MVTUniswapMining.address, "500000000000000000000000000", { from: accounts[0] });
+        await uniswapV2PairInstance.approve(MVTUniswapMining.address, "500000000000000000000000000", { from: accounts[0] });
 
-        const allowance = await lpTokenTestInstance.allowance(accounts[0], MVTUniswapMining.address);
+        const allowance = await uniswapV2PairInstance.allowance(accounts[0], MVTUniswapMining.address);
         assert.equal(allowance, "500000000000000000000000000", 'The allowance is not 5000000 LP Token');
     });
 
@@ -58,7 +58,7 @@ contract('MVTUniswapMining', (accounts) => {
 
         //block 5
         await miningInstance.claimMVT({ from: accounts[0] });
-        balance = await MVTTokenTestInstance.balanceOf(accounts[0]);
+        balance = await movementTokenInstance.balanceOf(accounts[0]);
         assert.equal(balance.toString(), "5750000000000000000", 'Didnt claim 5.75 LP Token');
     });
 
@@ -67,7 +67,7 @@ contract('MVTUniswapMining', (accounts) => {
         miningInstance = await MVTUniswapMining.deployed();
         
         //block 6
-        await lpTokenTestInstance.mint(accounts[1], "10000000000000000000000000", { from: accounts[0] });
+        await uniswapV2PairInstance.mint(accounts[1], "10000000000000000000000000", { from: accounts[0] });
 
         for(i=0; i<93; i++){ //block 7-99
             await miningInstance.doNothing({ from: accounts[0] });
@@ -75,7 +75,7 @@ contract('MVTUniswapMining', (accounts) => {
 
         //block 100
         await miningInstance.claimMVT({ from: accounts[0] });
-        balance = await MVTTokenTestInstance.balanceOf(accounts[0]);
+        balance = await movementTokenInstance.balanceOf(accounts[0]);
 
         assert.equal(balance, "115000000000000000000", 'Didnt claim 115 MVT');
     });
@@ -85,7 +85,7 @@ contract('MVTUniswapMining', (accounts) => {
         miningInstance = await MVTUniswapMining.deployed();
 
         //block 101
-        await lpTokenTestInstance.approve(MVTUniswapMining.address, "500000000000000000000000000", { from: accounts[1] });
+        await uniswapV2PairInstance.approve(MVTUniswapMining.address, "500000000000000000000000000", { from: accounts[1] });
         
         //stake 250 LP Token for account 1
         //block 102
@@ -94,7 +94,7 @@ contract('MVTUniswapMining', (accounts) => {
         //block 103
         await miningInstance.claimMVT({ from: accounts[1] });
         
-        balance = await MVTTokenTestInstance.balanceOf(accounts[1]);
+        balance = await movementTokenInstance.balanceOf(accounts[1]);
 
         //(1.15)/1250*250
         assert.equal(balance, "230000000000000000", 'Didnt claim 0.23 MVT');
@@ -111,7 +111,7 @@ contract('MVTUniswapMining', (accounts) => {
         //block 108
         await miningInstance.claimMVT({ from: accounts[1] });
         
-        balance = await MVTTokenTestInstance.balanceOf(accounts[1]);
+        balance = await movementTokenInstance.balanceOf(accounts[1]);
 
         //(1.15)/1250*250*5+0.23
         assert.equal(balance, "1380000000000000000", 'Not claming extra 1.15 MVT');
@@ -125,7 +125,7 @@ contract('MVTUniswapMining', (accounts) => {
         //block 109
         await miningInstance.claimMVT({ from: accounts[0] });
         
-        balance = await MVTTokenTestInstance.balanceOf(accounts[0]);
+        balance = await movementTokenInstance.balanceOf(accounts[0]);
 
         //1.15/1250*1000 * (109-102) + 1.15/1000*1000 * (102-100) + 115
         assert.equal(balance.toString(), "123740000000000000000", 'Did not claim 123.74 MVT');
@@ -136,10 +136,10 @@ contract('MVTUniswapMining', (accounts) => {
         miningInstance = await MVTUniswapMining.deployed();
 
         //block 110
-        await lpTokenTestInstance.mint(accounts[2], "100000000000000000000000", { from: accounts[0] });
+        await uniswapV2PairInstance.mint(accounts[2], "100000000000000000000000", { from: accounts[0] });
 
         //block 111
-        await lpTokenTestInstance.approve(MVTUniswapMining.address, "500000000000000000000000000", { from: accounts[2] });
+        await uniswapV2PairInstance.approve(MVTUniswapMining.address, "500000000000000000000000000", { from: accounts[2] });
         
         //block 112
         await miningInstance.stake("1250000000000000000000", 0, { from: accounts[2] }); 
@@ -171,9 +171,9 @@ contract('MVTUniswapMining', (accounts) => {
         await miningInstance.claimMVT({ from: accounts[1] });
         await miningInstance.claimMVT({ from: accounts[2] });
 
-        balance0 = await MVTTokenTestInstance.balanceOf(accounts[0]);
-        balance1 = await MVTTokenTestInstance.balanceOf(accounts[1]);
-        balance2 = await MVTTokenTestInstance.balanceOf(accounts[2]);
+        balance0 = await movementTokenInstance.balanceOf(accounts[0]);
+        balance1 = await movementTokenInstance.balanceOf(accounts[1]);
+        balance2 = await movementTokenInstance.balanceOf(accounts[2]);
 
         // 123.74+ (112−109)÷1250×1000×1.15 + (113−112)÷2500×1000×1.15 + (200−113)÷1250×1000×1.15 = 207
         assert.equal(balance0.toString(), "207000000000000000000", 'balance account0 != 207 MVT');
@@ -190,17 +190,17 @@ contract('MVTUniswapMining', (accounts) => {
 
         miningInstance = await MVTUniswapMining.deployed();
 
-        balance0_before = await lpTokenTestInstance.balanceOf(accounts[0]);
-        balance1_before = await lpTokenTestInstance.balanceOf(accounts[1]);
-        balance2_before = await lpTokenTestInstance.balanceOf(accounts[2]);
+        balance0_before = await uniswapV2PairInstance.balanceOf(accounts[0]);
+        balance1_before = await uniswapV2PairInstance.balanceOf(accounts[1]);
+        balance2_before = await uniswapV2PairInstance.balanceOf(accounts[2]);
 
         await miningInstance.unstake(0, "1000000000000000000000", { from: accounts[0] });
         await miningInstance.unstake(0, "250000000000000000000", { from: accounts[1] });
        // await miningInstance.unstake(0, { from: accounts[2] });
 
-        balance0_after = await lpTokenTestInstance.balanceOf(accounts[0]);
-        balance1_after = await lpTokenTestInstance.balanceOf(accounts[1]);
-        balance2_after = await lpTokenTestInstance.balanceOf(accounts[2]);
+        balance0_after = await uniswapV2PairInstance.balanceOf(accounts[0]);
+        balance1_after = await uniswapV2PairInstance.balanceOf(accounts[1]);
+        balance2_after = await uniswapV2PairInstance.balanceOf(accounts[2]);
 
         assert.equal(new BN(balance0_after).sub(new BN(balance0_before)), "1000000000000000000000", 'unstake account0 != 1000 LP Token');
         assert.equal(new BN(balance1_after).sub(new BN(balance1_before)), "250000000000000000000", 'unstake account0 != 250 LP Token');
@@ -212,7 +212,7 @@ contract('MVTUniswapMining', (accounts) => {
         
         miningInstance = await MVTUniswapMining.deployed();
 
-        lpBalanceMining = await lpTokenTestInstance.balanceOf(MVTUniswapMining.address);
+        lpBalanceMining = await uniswapV2PairInstance.balanceOf(MVTUniswapMining.address);
         totalStaked = await miningInstance.totalStaked();
 
 

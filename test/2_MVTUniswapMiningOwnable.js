@@ -2,7 +2,7 @@
 const truffleAssert = require('truffle-assertions');
 
 const MVTUniswapMining = artifacts.require('MVTUniswapMining');
-const MVTTokenTest = artifacts.require('MVTTokenTest');
+const MovementToken = artifacts.require('MovementToken');
 
 contract('MVTUniswapMining', (accounts) => {
     it('should be pausable by admin', async () => {
@@ -29,7 +29,7 @@ contract('MVTUniswapMining', (accounts) => {
 
     it('should be able to sendMVT by admin', async () => {
         miningInstance = await MVTUniswapMining.deployed();
-        MVTInstance = await MVTTokenTest.deployed();
+        MVTInstance = await MovementToken.deployed();
     
         await MVTInstance.mint(MVTUniswapMining.address, 1234567890, {from: accounts[0]})
         await miningInstance.sendMVT(accounts[0], 1234567890, {from: accounts[0]});

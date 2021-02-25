@@ -1,8 +1,8 @@
 const truffleAssert = require('truffle-assertions');
 var BN = web3.utils.BN;
 
-const LPTokenTest = artifacts.require('LPTokenTest');
-const MVTTokenTest = artifacts.require('MVTTokenTest');
+const UniswapV2Pair = artifacts.require('UniswapV2Pair');
+const MovementToken = artifacts.require('MovementToken');
 const MVTUniswapMining = artifacts.require('MVTUniswapMining');
 const MVTUniswapMiningProxy = artifacts.require('MVTUniswapMiningProxy');
 
@@ -18,8 +18,8 @@ const maxClaimed = MVTPerBlock.mul(totalMiningBlockNum)
 
 contract('MVTUniswapMining', (accounts) => {
     it('should deploy new contracts', async ()=>{
-        lpInstance = await LPTokenTest.new();
-        MVTInstance = await MVTTokenTest.new();
+        lpInstance = await UniswapV2Pair.new();
+        MVTInstance = await MovementToken.new();
         miningImplementationInstance = await MVTUniswapMining.new();
         miningProxyInstance = await MVTUniswapMiningProxy.new(MVTUniswapMining.address);
         miningInstance = await MVTUniswapMining.at(miningProxyInstance.address);

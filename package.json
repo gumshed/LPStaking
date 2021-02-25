@@ -1,0 +1,22 @@
+{
+  "name": "lpstaking",
+  "version": "1.0.0",
+  "description": "A simple staking smart contract that stake for Uniswap LP tokens and distribute MVT prorate to all stakers. MVT rewards are calculated on each block and claimable by manually calls claim() function or by supplying more LP tokens.",
+  "main": "1_MVTUniswapMining.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gumshed/LPStaking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gumshed/LPStaking/issues"
+  },
+  "homepage": "https://github.com/gumshed/LPStaking#readme"
+}
