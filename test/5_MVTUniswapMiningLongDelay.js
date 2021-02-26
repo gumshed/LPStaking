@@ -7,7 +7,7 @@ const MVTUniswapMining = artifacts.require('MVTUniswapMining');
 const MVTUniswapMiningProxy = artifacts.require('MVTUniswapMiningProxy');
 
 var lpInstance;
-var MVTInstance;
+var mvtInstance;
 var miningInstance;
 
 const MVTPerBlock = new BN("1150000000000000000");
@@ -17,10 +17,10 @@ const maxClaimed = MVTPerBlock.mul(totalMiningBlockNum)
 contract('MVTUniswapMining', (accounts) => {
     it('should deploy new contracts', async ()=>{
         lpInstance = await UniswapV2Pair.new();
-        MVTInstance = await MovementToken.new();
+        mvtInstance = await MovementToken.new();
         miningProxyInstance = await MVTUniswapMiningProxy.new(MVTUniswapMining.address);
         miningInstance = await MVTUniswapMining.at(miningProxyInstance.address);
-        await miningInstance.initiate(0, totalMiningBlockNum.toString(), MVTPerBlock.toString(), MVTInstance.address, lpInstance.address); //block 0
+        await miningInstance.initiate(0, totalMiningBlockNum.toString(), MVTPerBlock.toString(), mvtInstance.address, lpInstance.address); //block 0
 
         //block 1-100
         for(i=0; i<100; i++){
@@ -50,9 +50,9 @@ contract('MVTUniswapMining', (accounts) => {
 
     it('should prepare MVT supply for mining contract', async()=>{
         //230 MVT, block 121
-        await MVTInstance.mint(miningInstance.address, "2300000000000000000000", {from: accounts[0]});
+        await mvtInstance.mint(miningInstance.address, "2300000000000000000000", {from: accounts[0]});
 
-        var balance = await MVTInstance.balanceOf(miningInstance.address);
+        var balance = await mvtInstance.balanceOf(miningInstance.address);
         assert.equal(balance, "2300000000000000000000", 'MVT != 230');
     });
 
@@ -105,7 +105,7 @@ contract('MVTUniswapMining', (accounts) => {
         totalClaimed = new BN(0);
 
         for(i=0;i<10;i++){
-            totalClaimed = totalClaimed.add(await MVTInstance.balanceOf(accounts[i]));
+            totalClaimed = totalClaimed.add(await mvtInstance.balanceOf(accounts[i]));
         }
 
         var totalClaimedCont = await miningInstance.totalClaimed();

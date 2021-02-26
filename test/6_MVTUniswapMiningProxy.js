@@ -7,7 +7,7 @@ const MVTUniswapMining = artifacts.require('MVTUniswapMining');
 const MVTUniswapMiningProxy = artifacts.require('MVTUniswapMiningProxy');
 
 var lpInstance;
-var MVTInstance;
+var mvtInstance;
 var miningInstance;
 var miningProxyInstance;
 var miningImplementationInstance;
@@ -19,17 +19,17 @@ const maxClaimed = MVTPerBlock.mul(totalMiningBlockNum)
 contract('MVTUniswapMining', (accounts) => {
     it('should deploy new contracts', async ()=>{
         lpInstance = await UniswapV2Pair.new();
-        MVTInstance = await MovementToken.new();
+        mvtInstance = await MovementToken.new();
         miningImplementationInstance = await MVTUniswapMining.new();
         miningProxyInstance = await MVTUniswapMiningProxy.new(MVTUniswapMining.address);
         miningInstance = await MVTUniswapMining.at(miningProxyInstance.address);
-        await miningInstance.initiate(0, totalMiningBlockNum.toString(), MVTPerBlock.toString(), MVTInstance.address, lpInstance.address); //block 0
+        await miningInstance.initiate(0, totalMiningBlockNum.toString(), MVTPerBlock.toString(), mvtInstance.address, lpInstance.address); //block 0
 
     });
 
     it('should not be able to initiate twice', async()=>{
 
-        await truffleAssert.reverts(miningInstance.initiate(0, totalMiningBlockNum.toString(), MVTPerBlock.toString(), MVTInstance.address, lpInstance.address), "contract is already initiated");
+        await truffleAssert.reverts(miningInstance.initiate(0, totalMiningBlockNum.toString(), MVTPerBlock.toString(), mvtInstance.address, lpInstance.address), "contract is already initiated");
     });
 
     it('proxy contract is initiated', async()=>{
@@ -78,7 +78,7 @@ contract('MVTUniswapMining', (accounts) => {
 
     it('should be able to change to another implementation without impacting storage', async()=>{
 
-        await MVTInstance.mint(miningProxyInstance.address, "100000000000000000000000000", { from: accounts[0] });
+        await mvtInstance.mint(miningProxyInstance.address, "100000000000000000000000000", { from: accounts[0] });
         await lpInstance.mint(accounts[0], "10000000000000000000000000", { from: accounts[0] });
         await lpInstance.approve(miningProxyInstance.address, "500000000000000000000000000", { from: accounts[0] });
         await miningInstance.stake("1000000000000000000000", 0, { from: accounts[0] });

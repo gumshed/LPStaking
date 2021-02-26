@@ -7,7 +7,7 @@ const MVTUniswapMining = artifacts.require('MVTUniswapMining');
 const MVTUniswapMiningProxy = artifacts.require('MVTUniswapMiningProxy');
 
 var lpInstance;
-var MVTInstance;
+var mvtInstance;
 var miningInstance;
 
 const MVTPerBlock = new BN("1150000000000000000");
@@ -17,10 +17,10 @@ const maxClaimed = MVTPerBlock.mul(totalMiningBlockNum)
 contract('MVTUniswapMining', (accounts) => {
     it('should deploy new contracts', async ()=>{
         lpInstance = await UniswapV2Pair.new();
-        MVTInstance = await MovementToken.new();
+        mvtInstance = await MovementToken.new();
         miningProxyInstance = await MVTUniswapMiningProxy.new(MVTUniswapMining.address);
         miningInstance = await MVTUniswapMining.at(miningProxyInstance.address);
-        await miningInstance.initiate(0, totalMiningBlockNum.toString(), MVTPerBlock.toString(), MVTInstance.address, lpInstance.address); //block 0
+        await miningInstance.initiate(0, totalMiningBlockNum.toString(), MVTPerBlock.toString(), mvtInstance.address, lpInstance.address); //block 0
 
         //block 1-3
         await miningInstance.doNothing();
@@ -51,8 +51,8 @@ contract('MVTUniswapMining', (accounts) => {
 
     it('should prepare MVT supply for mining contract', async()=>{
         //230 MVT, block 24
-        await MVTInstance.mint(miningInstance.address, "2300000000000000000000", {from: accounts[0]});
-        var balance = await MVTInstance.balanceOf(miningInstance.address);
+        await mvtInstance.mint(miningInstance.address, "2300000000000000000000", {from: accounts[0]});
+        var balance = await mvtInstance.balanceOf(miningInstance.address);
         assert.equal(balance, "2300000000000000000000", 'MVT != 230');
     });
 
@@ -98,7 +98,7 @@ contract('MVTUniswapMining', (accounts) => {
     it('should claim correct MVT', async()=>{
         //block 31
         await miningInstance.unstake(0, "1000000000000000000000", {from: accounts[0]});
-        var MVTBalance0 = await MVTInstance.balanceOf(accounts[0]);
+        var MVTBalance0 = await mvtInstance.balanceOf(accounts[0]);
 
         //1.15*24
         //1.15
@@ -114,7 +114,7 @@ contract('MVTUniswapMining', (accounts) => {
 
         //block 32
         await miningInstance.unstake(0, "1000000000000000000000", {from: accounts[1]});
-        var MVTBalance1 = await MVTInstance.balanceOf(accounts[1]);
+        var MVTBalance1 = await mvtInstance.balanceOf(accounts[1]);
 
         //1.15*1000/16000 + 1.15*1000/15000
         assert(MVTBalance1.lte(new BN("148541666666666666")), 'MVTBalance1 != 0.1485416667');
@@ -145,7 +145,7 @@ contract('MVTUniswapMining', (accounts) => {
         //block 44
         await miningInstance.claimMVT({from: accounts[2]});
 
-        var MVTBalance2 = await MVTInstance.balanceOf(accounts[2]);
+        var MVTBalance2 = await mvtInstance.balanceOf(accounts[2]);
 
         //11 * 1.15*50000/64000 
         assert(MVTBalance2.lte(new BN("9882812500000000000")), 'MVTBalance2 != 9.8828125');

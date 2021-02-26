@@ -29,11 +29,11 @@ contract('MVTUniswapMining', (accounts) => {
 
     it('should be able to sendMVT by admin', async () => {
         miningInstance = await MVTUniswapMining.deployed();
-        MVTInstance = await MovementToken.deployed();
+        mvtInstance = await MovementToken.deployed();
     
-        await MVTInstance.mint(MVTUniswapMining.address, 1234567890, {from: accounts[0]})
+        await mvtInstance.mint(MVTUniswapMining.address, 1234567890, {from: accounts[0]})
         await miningInstance.sendMVT(accounts[0], 1234567890, {from: accounts[0]});
-        balance = await MVTInstance.balanceOf(MVTUniswapMining.address);
+        balance = await mvtInstance.balanceOf(MVTUniswapMining.address);
 
         assert.equal(balance, 0, 'MVT balance is different');
         
