@@ -25,7 +25,7 @@ contract MVTUniswapMiningStorage {
   ERC20 public LPToken;
   ERC20 public MVTToken;
   
-  uint public startMiningBlockNum = 0;
+  uint public startMiningBlockNum = 12047302;
   uint public totalMiningBlockNum = 2400000;
   uint public endMiningBlockNum = startMiningBlockNum + totalMiningBlockNum;
   uint public MVTPerBlock = 83333333333333333;

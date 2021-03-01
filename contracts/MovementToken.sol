@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
  
 contract MovementToken is ERC20, Ownable{
-    constructor() public ERC20("MVT Finance", "MVT")  {
+    constructor() public ERC20("The Movement", "MVT")  {
 
     }
 

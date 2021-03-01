@@ -18,9 +18,9 @@
  *
  */
 
-//const HDWalletProvider = require('@truffle/hdwallet-provider');
-//const infuraKey = "cce8dccbfb524ca691cd109d9e214d53";
-//const mnemonic = "glare public debris ethics dinner risk chimney grace faculty divide poem major"
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const infuraKey = "3a76a849d6ef44009e9752d39d1ac98f";
+const mnemonic = "dinosaur stool canal warfare oppose inform still city amused situate gesture ask"
 
 //const fs = require('fs');
 //const mnemonic = fs.readFileSync(".secret").toString().trim();
@@ -62,7 +62,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     ropsten: {
-      provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/cce8dccbfb524ca691cd109d9e214d53`),
+      provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/3a76a849d6ef44009e9752d39d1ac98f`),
       network_id: 3,       // Ropsten's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
@@ -71,7 +71,7 @@ module.exports = {
     },
 
     goerli: {
-      provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/v3/cce8dccbfb524ca691cd109d9e214d53`),
+      provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/v3/3a76a849d6ef44009e9752d39d1ac98f`),
       network_id: 5,       // Ropsten's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
