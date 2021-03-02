@@ -7,12 +7,12 @@
   "immutableReferences": {},
   "sourceMap": "182:56:0:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "182:56:0:-:0;;;;;",
-  "source": "//SPDX-License-Identifier: MIT\r\n\r\nimport \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\r\n\r\npragma solidity ^0.6.0;\r\n\r\ncontract OwnableStorage{\r\n    address internal _owner;\r\n}\r\n \r\ncontract PausableStorage{\r\n    bool internal _paused;\r\n}\r\n\r\ncontract MmighVTUniswapMiningStorage {\r\n  using SafeMath for uint256;\r\n\r\n  bool constant public isMVTUniswapMining = true;\r\n  bool public initiated = false;\r\n\r\n  // proxy storage\r\n  address public admin;\r\n  address public implementation;\r\n  \r\n  ERC20 public LPToken;\r\n  ERC20 public MVTToken;\r\n  \r\n  uint public startMiningBlockNum = 0;\r\n  uint public totalMiningBlockNum = 2400000;\r\n  uint public endMiningBlockNum = startMiningBlockNum + totalMiningBlockNum;\r\n  uint public MVTPerBlock = 83333333333333333;\r\n  \r\n  uint public constant stakeInitialIndex = 1e36;\r\n  \r\n  uint public miningStateBlock = startMiningBlockNum;\r\n  uint public miningStateIndex = stakeInitialIndex;\r\n\r\n\r\n  \r\n  struct Stake{\r\n    uint amount;\r\n    uint lockedUntil;\r\n    uint lockPeriod;\r\n    uint stakePower;\r\n    bool exists;\r\n  }\r\n\r\n  mapping (address => Stake[]) public stakes;\r\n  mapping (address => uint) public stakeCount;\r\n  uint public totalStaked;\r\n  uint public totalStakedPower;\r\n\r\n  mapping (address => uint) public stakeHolders;\r\n  mapping (address => uint) public stakerPower;\r\n  mapping (address => uint) public stakerIndexes;\r\n  mapping (address => uint) public stakerClaimed;\r\n  uint public totalClaimed;\r\n\r\n}",
+  "source": "//SPDX-License-Identifier: MIT\r\n\r\nimport \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\r\n\r\npragma solidity ^0.6.0;\r\n\r\ncontract OwnableStorage{\r\n    address internal _owner;\r\n}\r\n \r\ncontract PausableStorage{\r\n    bool internal _paused;\r\n}\r\n\r\ncontract MVTUniswapMiningStorage {\r\n  using SafeMath for uint256;\r\n\r\n  bool constant public isMVTUniswapMining = true;\r\n  bool public initiated = false;\r\n\r\n  // proxy storage\r\n  address public admin;\r\n  address public implementation;\r\n  \r\n  ERC20 public LPToken;\r\n  ERC20 public MVTToken;\r\n  \r\n  uint public startMiningBlockNum = 0;\r\n  uint public totalMiningBlockNum = 2400000;\r\n  uint public endMiningBlockNum = startMiningBlockNum + totalMiningBlockNum;\r\n  uint public MVTPerBlock = 83333333333333333;\r\n  \r\n  uint public constant stakeInitialIndex = 1e36;\r\n  \r\n  uint public miningStateBlock = startMiningBlockNum;\r\n  uint public miningStateIndex = stakeInitialIndex;\r\n\r\n\r\n  \r\n  struct Stake{\r\n    uint amount;\r\n    uint lockedUntil;\r\n    uint lockPeriod;\r\n    uint stakePower;\r\n    bool exists;\r\n  }\r\n\r\n  mapping (address => Stake[]) public stakes;\r\n  mapping (address => uint) public stakeCount;\r\n  uint public totalStaked;\r\n  uint public totalStakedPower;\r\n\r\n  mapping (address => uint) public stakeHolders;\r\n  mapping (address => uint) public stakerPower;\r\n  mapping (address => uint) public stakerIndexes;\r\n  mapping (address => uint) public stakerClaimed;\r\n  uint public totalClaimed;\r\n\r\n}",
   "sourcePath": "C:/Users/Josh Erickson/documents/github/lpstaking/contracts/MVTUniswapMiningStorage.sol",
   "ast": {
     "absolutePath": "/C/Users/Josh Erickson/documents/github/lpstaking/contracts/MVTUniswapMiningStorage.sol",
     "exportedSymbols": {
-      "MmighVTUniswapMiningStorage": [
+      "MVTUniswapMiningStorage": [
         91
       ],
       "OwnableStorage": [
@@ -152,7 +152,7 @@
         "linearizedBaseContracts": [
           91
         ],
-        "name": "MmighVTUniswapMiningStorage",
+        "name": "MVTUniswapMiningStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
@@ -736,7 +736,7 @@
             "visibility": "public"
           },
           {
-            "canonicalName": "MmighVTUniswapMiningStorage.Stake",
+            "canonicalName": "MVTUniswapMiningStorage.Stake",
             "id": 59,
             "members": [
               {
@@ -900,7 +900,7 @@
             "storageLocation": "default",
             "typeDescriptions": {
               "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Stake_$59_storage_$dyn_storage_$",
-              "typeString": "mapping(address => struct MmighVTUniswapMiningStorage.Stake[])"
+              "typeString": "mapping(address => struct MVTUniswapMiningStorage.Stake[])"
             },
             "typeName": {
               "id": 63,
@@ -918,7 +918,7 @@
               "src": "1055:28:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Stake_$59_storage_$dyn_storage_$",
-                "typeString": "mapping(address => struct MmighVTUniswapMiningStorage.Stake[])"
+                "typeString": "mapping(address => struct MVTUniswapMiningStorage.Stake[])"
               },
               "valueType": {
                 "baseType": {
@@ -930,7 +930,7 @@
                   "src": "1075:5:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_struct$_Stake_$59_storage_ptr",
-                    "typeString": "struct MmighVTUniswapMiningStorage.Stake"
+                    "typeString": "struct MVTUniswapMiningStorage.Stake"
                   }
                 },
                 "id": 62,
@@ -939,7 +939,7 @@
                 "src": "1075:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_array$_t_struct$_Stake_$59_storage_$dyn_storage_ptr",
-                  "typeString": "struct MmighVTUniswapMiningStorage.Stake[]"
+                  "typeString": "struct MVTUniswapMiningStorage.Stake[]"
                 }
               }
             },
@@ -1284,7 +1284,7 @@
     "attributes": {
       "absolutePath": "/C/Users/Josh Erickson/documents/github/lpstaking/contracts/MVTUniswapMiningStorage.sol",
       "exportedSymbols": {
-        "MmighVTUniswapMiningStorage": [
+        "MVTUniswapMiningStorage": [
           91
         ],
         "OwnableStorage": [
@@ -1445,7 +1445,7 @@
           "linearizedBaseContracts": [
             91
           ],
-          "name": "MmighVTUniswapMiningStorage",
+          "name": "MVTUniswapMiningStorage",
           "scope": 92
         },
         "children": [
@@ -2030,7 +2030,7 @@
           },
           {
             "attributes": {
-              "canonicalName": "MmighVTUniswapMiningStorage.Stake",
+              "canonicalName": "MVTUniswapMiningStorage.Stake",
               "name": "Stake",
               "scope": 91,
               "visibility": "public"
@@ -2191,14 +2191,14 @@
               "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
-              "type": "mapping(address => struct MmighVTUniswapMiningStorage.Stake[])",
+              "type": "mapping(address => struct MVTUniswapMiningStorage.Stake[])",
               "value": null,
               "visibility": "public"
             },
             "children": [
               {
                 "attributes": {
-                  "type": "mapping(address => struct MmighVTUniswapMiningStorage.Stake[])"
+                  "type": "mapping(address => struct MVTUniswapMiningStorage.Stake[])"
                 },
                 "children": [
                   {
@@ -2213,7 +2213,7 @@
                   {
                     "attributes": {
                       "length": null,
-                      "type": "struct MmighVTUniswapMiningStorage.Stake[]"
+                      "type": "struct MVTUniswapMiningStorage.Stake[]"
                     },
                     "children": [
                       {
@@ -2221,7 +2221,7 @@
                           "contractScope": null,
                           "name": "Stake",
                           "referencedDeclaration": 59,
-                          "type": "struct MmighVTUniswapMiningStorage.Stake"
+                          "type": "struct MVTUniswapMiningStorage.Stake"
                         },
                         "id": 61,
                         "name": "UserDefinedTypeName",

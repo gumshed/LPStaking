@@ -12,7 +12,7 @@ contract PausableStorage{
     bool internal _paused;
 }
 
-contract MmighVTUniswapMiningStorage {
+contract MVTUniswapMiningStorage {
   using SafeMath for uint256;
 
   bool constant public isMVTUniswapMining = true;
