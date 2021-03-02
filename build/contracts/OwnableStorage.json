@@ -1,44 +1,44 @@
 {
   "contractName": "OwnableStorage",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/Josh Erickson/documents/github/lpstaking/contracts/MVTUniswapMiningStorage.sol\":\"OwnableStorage\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Josh Erickson/documents/github/lpstaking/contracts/MVTUniswapMiningStorage.sol\":{\"keccak256\":\"0x6ba79e2fa3fff1a727b69ce185f3e84cab6d173d6ac4dc7fe65d9cba4a553a8b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c40a9ae8d65159ba7ffa2da39de3faee721b50d85f56c28c8eb437c9b47f8405\",\"dweb:/ipfs/QmYWMUMXswZQcpQNgbBQqkvQ1g6GapSLiYUP9bds2gp6SA\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x84ede4cea94f436b1d6ee43d1d107cd6723fe3eb3e84a92f96cc3dd5b255d62b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9cbca39399d2027da8028b224d2c74386ef2ed0d0512a660e51beb9a0a48cba0\",\"dweb:/ipfs/QmXHBqqHu4p6YLDMdm4ZNQCMr5yEEAVm6hc6vDr5n8YCBm\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x902d27135146d838b9eb713746594907b6292d50c11ceb791ef3af36a05282ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3a0343f918122c9e7e02d26b0d6a45e6c0882bd03cea66298de2fb0a4390670b\",\"dweb:/ipfs/QmT2PxByghLeb6B7KYcA8A1RtgDXoX1Mooo6F7napGSa1s\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xb1b439fbc95b6285b8a37a7c25bbfe77644b4706d8405709bd575a0e6d67191b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c8fe1dd8140000fbbe4dd3899c15a20ea60d3ca1f9bff27ea21b9a2ff634e5a\",\"dweb:/ipfs/QmWgpKXT8syjcKdGtYUZjceghbSQmc9LVkzSYPxDwWrvnn\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xbc7f2f08b805e299fa2d5e702051171f670ded2808044dfeb6fab4357f167138\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://53f7f10bb120dca002788bc57a82cb2b17178312ed95c55a378a77f9a0803ee3\",\"dweb:/ipfs/QmYPMCJo9HA9WuvkTaCHJVGipyXNUr3skeEVSXj3QJgc8U\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220ad26dce7b3be3ba453672fe47822d7093ee4c643476626196cf033b2c76b313764736f6c634300060c0033",
-  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220ad26dce7b3be3ba453672fe47822d7093ee4c643476626196cf033b2c76b313764736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/Josh Erickson/Documents/GitHub/LPStaking/contracts/MVTUniswapMiningStorage.sol\":\"OwnableStorage\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Josh Erickson/Documents/GitHub/LPStaking/contracts/MVTUniswapMiningStorage.sol\":{\"keccak256\":\"0x6ba79e2fa3fff1a727b69ce185f3e84cab6d173d6ac4dc7fe65d9cba4a553a8b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c40a9ae8d65159ba7ffa2da39de3faee721b50d85f56c28c8eb437c9b47f8405\",\"dweb:/ipfs/QmYWMUMXswZQcpQNgbBQqkvQ1g6GapSLiYUP9bds2gp6SA\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x84ede4cea94f436b1d6ee43d1d107cd6723fe3eb3e84a92f96cc3dd5b255d62b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9cbca39399d2027da8028b224d2c74386ef2ed0d0512a660e51beb9a0a48cba0\",\"dweb:/ipfs/QmXHBqqHu4p6YLDMdm4ZNQCMr5yEEAVm6hc6vDr5n8YCBm\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x902d27135146d838b9eb713746594907b6292d50c11ceb791ef3af36a05282ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3a0343f918122c9e7e02d26b0d6a45e6c0882bd03cea66298de2fb0a4390670b\",\"dweb:/ipfs/QmT2PxByghLeb6B7KYcA8A1RtgDXoX1Mooo6F7napGSa1s\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xb1b439fbc95b6285b8a37a7c25bbfe77644b4706d8405709bd575a0e6d67191b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c8fe1dd8140000fbbe4dd3899c15a20ea60d3ca1f9bff27ea21b9a2ff634e5a\",\"dweb:/ipfs/QmWgpKXT8syjcKdGtYUZjceghbSQmc9LVkzSYPxDwWrvnn\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xbc7f2f08b805e299fa2d5e702051171f670ded2808044dfeb6fab4357f167138\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://53f7f10bb120dca002788bc57a82cb2b17178312ed95c55a378a77f9a0803ee3\",\"dweb:/ipfs/QmYPMCJo9HA9WuvkTaCHJVGipyXNUr3skeEVSXj3QJgc8U\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122013129f871d4f0977fcb6ba61ff558f4c463aa66a7d9713b250402f70164cec8c64736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122013129f871d4f0977fcb6ba61ff558f4c463aa66a7d9713b250402f70164cec8c64736f6c634300060c0033",
   "immutableReferences": {},
-  "sourceMap": "120:57:1:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "120:57:1:-:0;;;;;",
+  "sourceMap": "120:57:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "120:57:0:-:0;;;;;",
   "source": "//SPDX-License-Identifier: MIT\r\n\r\nimport \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\r\n\r\npragma solidity ^0.6.0;\r\n\r\ncontract OwnableStorage{\r\n    address internal _owner;\r\n}\r\n \r\ncontract PausableStorage{\r\n    bool internal _paused;\r\n}\r\n\r\ncontract MVTUniswapMiningStorage {\r\n  using SafeMath for uint256;\r\n\r\n  bool constant public isMVTUniswapMining = true;\r\n  bool public initiated = false;\r\n\r\n  // proxy storage\r\n  address public admin;\r\n  address public implementation;\r\n  \r\n  ERC20 public LPToken;\r\n  ERC20 public MVTToken;\r\n  \r\n  uint public startMiningBlockNum = 0;\r\n  uint public totalMiningBlockNum = 2400000;\r\n  uint public endMiningBlockNum = startMiningBlockNum + totalMiningBlockNum;\r\n  uint public MVTPerBlock = 83333333333333333;\r\n  \r\n  uint public constant stakeInitialIndex = 1e36;\r\n  \r\n  uint public miningStateBlock = startMiningBlockNum;\r\n  uint public miningStateIndex = stakeInitialIndex;\r\n\r\n\r\n  \r\n  struct Stake{\r\n    uint amount;\r\n    uint lockedUntil;\r\n    uint lockPeriod;\r\n    uint stakePower;\r\n    bool exists;\r\n  }\r\n\r\n  mapping (address => Stake[]) public stakes;\r\n  mapping (address => uint) public stakeCount;\r\n  uint public totalStaked;\r\n  uint public totalStakedPower;\r\n\r\n  mapping (address => uint) public stakeHolders;\r\n  mapping (address => uint) public stakerPower;\r\n  mapping (address => uint) public stakerIndexes;\r\n  mapping (address => uint) public stakerClaimed;\r\n  uint public totalClaimed;\r\n\r\n}",
-  "sourcePath": "C:/Users/Josh Erickson/documents/github/lpstaking/contracts/MVTUniswapMiningStorage.sol",
+  "sourcePath": "C:/Users/Josh Erickson/Documents/GitHub/LPStaking/contracts/MVTUniswapMiningStorage.sol",
   "ast": {
-    "absolutePath": "/C/Users/Josh Erickson/documents/github/lpstaking/contracts/MVTUniswapMiningStorage.sol",
+    "absolutePath": "/C/Users/Josh Erickson/Documents/GitHub/LPStaking/contracts/MVTUniswapMiningStorage.sol",
     "exportedSymbols": {
       "MVTUniswapMiningStorage": [
-        183
+        91
       ],
       "OwnableStorage": [
-        97
+        5
       ],
       "PausableStorage": [
-        100
+        8
       ]
     },
-    "id": 184,
+    "id": 92,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
         "file": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
-        "id": 93,
+        "id": 1,
         "nodeType": "ImportDirective",
-        "scope": 184,
-        "sourceUnit": 1042,
-        "src": "34:55:1",
+        "scope": 92,
+        "sourceUnit": 950,
+        "src": "34:55:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 94,
+        "id": 2,
         "literals": [
           "solidity",
           "^",
@@ -46,7 +46,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "93:23:1"
+        "src": "93:23:0"
       },
       {
         "abstract": false,
@@ -55,22 +55,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 97,
+        "id": 5,
         "linearizedBaseContracts": [
-          97
+          5
         ],
         "name": "OwnableStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 96,
+            "id": 4,
             "mutability": "mutable",
             "name": "_owner",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 97,
-            "src": "150:23:1",
+            "scope": 5,
+            "src": "150:23:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -78,10 +78,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 95,
+              "id": 3,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "150:7:1",
+              "src": "150:7:0",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -92,8 +92,8 @@
             "visibility": "internal"
           }
         ],
-        "scope": 184,
-        "src": "120:57:1"
+        "scope": 92,
+        "src": "120:57:0"
       },
       {
         "abstract": false,
@@ -102,22 +102,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 100,
+        "id": 8,
         "linearizedBaseContracts": [
-          100
+          8
         ],
         "name": "PausableStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 99,
+            "id": 7,
             "mutability": "mutable",
             "name": "_paused",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 100,
-            "src": "213:21:1",
+            "scope": 8,
+            "src": "213:21:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -125,10 +125,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 98,
+              "id": 6,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "213:4:1",
+              "src": "213:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -138,8 +138,8 @@
             "visibility": "internal"
           }
         ],
-        "scope": 184,
-        "src": "182:56:1"
+        "scope": 92,
+        "src": "182:56:0"
       },
       {
         "abstract": false,
@@ -148,34 +148,34 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 183,
+        "id": 91,
         "linearizedBaseContracts": [
-          183
+          91
         ],
         "name": "MVTUniswapMiningStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 103,
+            "id": 11,
             "libraryName": {
               "contractScope": null,
-              "id": 101,
+              "id": 9,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 538,
-              "src": "286:8:1",
+              "referencedDeclaration": 446,
+              "src": "286:8:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$538",
+                "typeIdentifier": "t_contract$_SafeMath_$446",
                 "typeString": "library SafeMath"
               }
             },
             "nodeType": "UsingForDirective",
-            "src": "280:27:1",
+            "src": "280:27:0",
             "typeName": {
-              "id": 102,
+              "id": 10,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "299:7:1",
+              "src": "299:7:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -185,13 +185,13 @@
           {
             "constant": true,
             "functionSelector": "adcec9c5",
-            "id": 106,
+            "id": 14,
             "mutability": "constant",
             "name": "isMVTUniswapMining",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "313:46:1",
+            "scope": 91,
+            "src": "313:46:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -199,10 +199,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 104,
+              "id": 12,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "313:4:1",
+              "src": "313:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -211,14 +211,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "74727565",
-              "id": 105,
+              "id": 13,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "bool",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "355:4:1",
+              "src": "355:4:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
@@ -231,13 +231,13 @@
           {
             "constant": false,
             "functionSelector": "9f118536",
-            "id": 109,
+            "id": 17,
             "mutability": "mutable",
             "name": "initiated",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "364:29:1",
+            "scope": 91,
+            "src": "364:29:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -245,10 +245,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 107,
+              "id": 15,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "364:4:1",
+              "src": "364:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -257,14 +257,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "66616c7365",
-              "id": 108,
+              "id": 16,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "bool",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "388:5:1",
+              "src": "388:5:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
@@ -277,13 +277,13 @@
           {
             "constant": false,
             "functionSelector": "f851a440",
-            "id": 111,
+            "id": 19,
             "mutability": "mutable",
             "name": "admin",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "420:20:1",
+            "scope": 91,
+            "src": "420:20:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -291,10 +291,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 110,
+              "id": 18,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "420:7:1",
+              "src": "420:7:0",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -307,13 +307,13 @@
           {
             "constant": false,
             "functionSelector": "5c60da1b",
-            "id": 113,
+            "id": 21,
             "mutability": "mutable",
             "name": "implementation",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "445:29:1",
+            "scope": 91,
+            "src": "445:29:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -321,10 +321,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 112,
+              "id": 20,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "445:7:1",
+              "src": "445:7:0",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -337,28 +337,28 @@
           {
             "constant": false,
             "functionSelector": "011cee36",
-            "id": 115,
+            "id": 23,
             "mutability": "mutable",
             "name": "LPToken",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "483:20:1",
+            "scope": 91,
+            "src": "483:20:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ERC20_$1041",
+              "typeIdentifier": "t_contract$_ERC20_$949",
               "typeString": "contract ERC20"
             },
             "typeName": {
               "contractScope": null,
-              "id": 114,
+              "id": 22,
               "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1041,
-              "src": "483:5:1",
+              "referencedDeclaration": 949,
+              "src": "483:5:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC20_$1041",
+                "typeIdentifier": "t_contract$_ERC20_$949",
                 "typeString": "contract ERC20"
               }
             },
@@ -368,28 +368,28 @@
           {
             "constant": false,
             "functionSelector": "1c51c691",
-            "id": 117,
+            "id": 25,
             "mutability": "mutable",
             "name": "MVTToken",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "508:21:1",
+            "scope": 91,
+            "src": "508:21:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ERC20_$1041",
+              "typeIdentifier": "t_contract$_ERC20_$949",
               "typeString": "contract ERC20"
             },
             "typeName": {
               "contractScope": null,
-              "id": 116,
+              "id": 24,
               "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1041,
-              "src": "508:5:1",
+              "referencedDeclaration": 949,
+              "src": "508:5:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC20_$1041",
+                "typeIdentifier": "t_contract$_ERC20_$949",
                 "typeString": "contract ERC20"
               }
             },
@@ -399,13 +399,13 @@
           {
             "constant": false,
             "functionSelector": "ad2a04e0",
-            "id": 120,
+            "id": 28,
             "mutability": "mutable",
             "name": "startMiningBlockNum",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "538:35:1",
+            "scope": 91,
+            "src": "538:35:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -413,10 +413,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 118,
+              "id": 26,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "538:4:1",
+              "src": "538:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -425,14 +425,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30",
-              "id": 119,
+              "id": 27,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "572:1:1",
+              "src": "572:1:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -445,13 +445,13 @@
           {
             "constant": false,
             "functionSelector": "1fb6ef1a",
-            "id": 123,
+            "id": 31,
             "mutability": "mutable",
             "name": "totalMiningBlockNum",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "578:41:1",
+            "scope": 91,
+            "src": "578:41:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -459,10 +459,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 121,
+              "id": 29,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "578:4:1",
+              "src": "578:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -471,14 +471,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "32343030303030",
-              "id": 122,
+              "id": 30,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "612:7:1",
+              "src": "612:7:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_2400000_by_1",
@@ -491,13 +491,13 @@
           {
             "constant": false,
             "functionSelector": "52d10e8e",
-            "id": 128,
+            "id": 36,
             "mutability": "mutable",
             "name": "endMiningBlockNum",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "624:73:1",
+            "scope": 91,
+            "src": "624:73:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -505,10 +505,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 124,
+              "id": 32,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "624:4:1",
+              "src": "624:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -520,19 +520,19 @@
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
               },
-              "id": 127,
+              "id": 35,
               "isConstant": false,
               "isLValue": false,
               "isPure": false,
               "lValueRequested": false,
               "leftExpression": {
                 "argumentTypes": null,
-                "id": 125,
+                "id": 33,
                 "name": "startMiningBlockNum",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 120,
-                "src": "656:19:1",
+                "referencedDeclaration": 28,
+                "src": "656:19:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
@@ -542,18 +542,18 @@
               "operator": "+",
               "rightExpression": {
                 "argumentTypes": null,
-                "id": 126,
+                "id": 34,
                 "name": "totalMiningBlockNum",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 123,
-                "src": "678:19:1",
+                "referencedDeclaration": 31,
+                "src": "678:19:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
-              "src": "656:41:1",
+              "src": "656:41:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -564,13 +564,13 @@
           {
             "constant": false,
             "functionSelector": "1edb0d77",
-            "id": 131,
+            "id": 39,
             "mutability": "mutable",
             "name": "MVTPerBlock",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "702:43:1",
+            "scope": 91,
+            "src": "702:43:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -578,10 +578,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 129,
+              "id": 37,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "702:4:1",
+              "src": "702:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -590,14 +590,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3833333333333333333333333333333333",
-              "id": 130,
+              "id": 38,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "728:17:1",
+              "src": "728:17:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_83333333333333333_by_1",
@@ -610,13 +610,13 @@
           {
             "constant": true,
             "functionSelector": "c285c820",
-            "id": 134,
+            "id": 42,
             "mutability": "constant",
             "name": "stakeInitialIndex",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "754:45:1",
+            "scope": 91,
+            "src": "754:45:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -624,10 +624,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 132,
+              "id": 40,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "754:4:1",
+              "src": "754:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -636,14 +636,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31653336",
-              "id": 133,
+              "id": 41,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "795:4:1",
+              "src": "795:4:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_1000000000000000000000000000000000000_by_1",
@@ -656,13 +656,13 @@
           {
             "constant": false,
             "functionSelector": "6456e66d",
-            "id": 137,
+            "id": 45,
             "mutability": "mutable",
             "name": "miningStateBlock",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "808:50:1",
+            "scope": 91,
+            "src": "808:50:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -670,10 +670,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 135,
+              "id": 43,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "808:4:1",
+              "src": "808:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -681,12 +681,12 @@
             },
             "value": {
               "argumentTypes": null,
-              "id": 136,
+              "id": 44,
               "name": "startMiningBlockNum",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 120,
-              "src": "839:19:1",
+              "referencedDeclaration": 28,
+              "src": "839:19:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -697,13 +697,13 @@
           {
             "constant": false,
             "functionSelector": "86b697db",
-            "id": 140,
+            "id": 48,
             "mutability": "mutable",
             "name": "miningStateIndex",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "863:48:1",
+            "scope": 91,
+            "src": "863:48:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -711,10 +711,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 138,
+              "id": 46,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "863:4:1",
+              "src": "863:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -722,12 +722,12 @@
             },
             "value": {
               "argumentTypes": null,
-              "id": 139,
+              "id": 47,
               "name": "stakeInitialIndex",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 134,
-              "src": "894:17:1",
+              "referencedDeclaration": 42,
+              "src": "894:17:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -737,17 +737,17 @@
           },
           {
             "canonicalName": "MVTUniswapMiningStorage.Stake",
-            "id": 151,
+            "id": 59,
             "members": [
               {
                 "constant": false,
-                "id": 142,
+                "id": 50,
                 "mutability": "mutable",
                 "name": "amount",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 151,
-                "src": "943:11:1",
+                "scope": 59,
+                "src": "943:11:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -755,10 +755,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 141,
+                  "id": 49,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "943:4:1",
+                  "src": "943:4:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -769,13 +769,13 @@
               },
               {
                 "constant": false,
-                "id": 144,
+                "id": 52,
                 "mutability": "mutable",
                 "name": "lockedUntil",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 151,
-                "src": "961:16:1",
+                "scope": 59,
+                "src": "961:16:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -783,10 +783,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 143,
+                  "id": 51,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "961:4:1",
+                  "src": "961:4:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -797,13 +797,13 @@
               },
               {
                 "constant": false,
-                "id": 146,
+                "id": 54,
                 "mutability": "mutable",
                 "name": "lockPeriod",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 151,
-                "src": "984:15:1",
+                "scope": 59,
+                "src": "984:15:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -811,10 +811,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 145,
+                  "id": 53,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "984:4:1",
+                  "src": "984:4:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -825,13 +825,13 @@
               },
               {
                 "constant": false,
-                "id": 148,
+                "id": 56,
                 "mutability": "mutable",
                 "name": "stakePower",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 151,
-                "src": "1006:15:1",
+                "scope": 59,
+                "src": "1006:15:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -839,10 +839,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 147,
+                  "id": 55,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1006:4:1",
+                  "src": "1006:4:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -853,13 +853,13 @@
               },
               {
                 "constant": false,
-                "id": 150,
+                "id": 58,
                 "mutability": "mutable",
                 "name": "exists",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 151,
-                "src": "1028:11:1",
+                "scope": 59,
+                "src": "1028:11:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -867,10 +867,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 149,
+                  "id": 57,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1028:4:1",
+                  "src": "1028:4:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -882,63 +882,63 @@
             ],
             "name": "Stake",
             "nodeType": "StructDefinition",
-            "scope": 183,
-            "src": "924:121:1",
+            "scope": 91,
+            "src": "924:121:0",
             "visibility": "public"
           },
           {
             "constant": false,
             "functionSelector": "584b62a1",
-            "id": 156,
+            "id": 64,
             "mutability": "mutable",
             "name": "stakes",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "1051:42:1",
+            "scope": 91,
+            "src": "1051:42:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Stake_$151_storage_$dyn_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Stake_$59_storage_$dyn_storage_$",
               "typeString": "mapping(address => struct MVTUniswapMiningStorage.Stake[])"
             },
             "typeName": {
-              "id": 155,
+              "id": 63,
               "keyType": {
-                "id": 152,
+                "id": 60,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "1060:7:1",
+                "src": "1060:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "1051:28:1",
+              "src": "1051:28:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Stake_$151_storage_$dyn_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Stake_$59_storage_$dyn_storage_$",
                 "typeString": "mapping(address => struct MVTUniswapMiningStorage.Stake[])"
               },
               "valueType": {
                 "baseType": {
                   "contractScope": null,
-                  "id": 153,
+                  "id": 61,
                   "name": "Stake",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 151,
-                  "src": "1071:5:1",
+                  "referencedDeclaration": 59,
+                  "src": "1071:5:0",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Stake_$151_storage_ptr",
+                    "typeIdentifier": "t_struct$_Stake_$59_storage_ptr",
                     "typeString": "struct MVTUniswapMiningStorage.Stake"
                   }
                 },
-                "id": 154,
+                "id": 62,
                 "length": null,
                 "nodeType": "ArrayTypeName",
-                "src": "1071:7:1",
+                "src": "1071:7:0",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Stake_$151_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Stake_$59_storage_$dyn_storage_ptr",
                   "typeString": "struct MVTUniswapMiningStorage.Stake[]"
                 }
               }
@@ -949,13 +949,13 @@
           {
             "constant": false,
             "functionSelector": "33060d90",
-            "id": 160,
+            "id": 68,
             "mutability": "mutable",
             "name": "stakeCount",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "1098:43:1",
+            "scope": 91,
+            "src": "1098:43:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -963,28 +963,28 @@
               "typeString": "mapping(address => uint256)"
             },
             "typeName": {
-              "id": 159,
+              "id": 67,
               "keyType": {
-                "id": 157,
+                "id": 65,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "1107:7:1",
+                "src": "1107:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "1098:25:1",
+              "src": "1098:25:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
                 "typeString": "mapping(address => uint256)"
               },
               "valueType": {
-                "id": 158,
+                "id": 66,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "1118:4:1",
+                "src": "1118:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
@@ -997,13 +997,13 @@
           {
             "constant": false,
             "functionSelector": "817b1cd2",
-            "id": 162,
+            "id": 70,
             "mutability": "mutable",
             "name": "totalStaked",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "1146:23:1",
+            "scope": 91,
+            "src": "1146:23:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1011,10 +1011,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 161,
+              "id": 69,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "1146:4:1",
+              "src": "1146:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1026,13 +1026,13 @@
           {
             "constant": false,
             "functionSelector": "e32a3b52",
-            "id": 164,
+            "id": 72,
             "mutability": "mutable",
             "name": "totalStakedPower",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "1174:28:1",
+            "scope": 91,
+            "src": "1174:28:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1040,10 +1040,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 163,
+              "id": 71,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "1174:4:1",
+              "src": "1174:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1055,13 +1055,13 @@
           {
             "constant": false,
             "functionSelector": "e26ff10a",
-            "id": 168,
+            "id": 76,
             "mutability": "mutable",
             "name": "stakeHolders",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "1209:45:1",
+            "scope": 91,
+            "src": "1209:45:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1069,28 +1069,28 @@
               "typeString": "mapping(address => uint256)"
             },
             "typeName": {
-              "id": 167,
+              "id": 75,
               "keyType": {
-                "id": 165,
+                "id": 73,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "1218:7:1",
+                "src": "1218:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "1209:25:1",
+              "src": "1209:25:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
                 "typeString": "mapping(address => uint256)"
               },
               "valueType": {
-                "id": 166,
+                "id": 74,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "1229:4:1",
+                "src": "1229:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
@@ -1103,13 +1103,13 @@
           {
             "constant": false,
             "functionSelector": "e8cc1159",
-            "id": 172,
+            "id": 80,
             "mutability": "mutable",
             "name": "stakerPower",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "1259:44:1",
+            "scope": 91,
+            "src": "1259:44:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1117,28 +1117,28 @@
               "typeString": "mapping(address => uint256)"
             },
             "typeName": {
-              "id": 171,
+              "id": 79,
               "keyType": {
-                "id": 169,
+                "id": 77,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "1268:7:1",
+                "src": "1268:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "1259:25:1",
+              "src": "1259:25:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
                 "typeString": "mapping(address => uint256)"
               },
               "valueType": {
-                "id": 170,
+                "id": 78,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "1279:4:1",
+                "src": "1279:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
@@ -1151,13 +1151,13 @@
           {
             "constant": false,
             "functionSelector": "dd4785f5",
-            "id": 176,
+            "id": 84,
             "mutability": "mutable",
             "name": "stakerIndexes",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "1308:46:1",
+            "scope": 91,
+            "src": "1308:46:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1165,28 +1165,28 @@
               "typeString": "mapping(address => uint256)"
             },
             "typeName": {
-              "id": 175,
+              "id": 83,
               "keyType": {
-                "id": 173,
+                "id": 81,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "1317:7:1",
+                "src": "1317:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "1308:25:1",
+              "src": "1308:25:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
                 "typeString": "mapping(address => uint256)"
               },
               "valueType": {
-                "id": 174,
+                "id": 82,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "1328:4:1",
+                "src": "1328:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
@@ -1199,13 +1199,13 @@
           {
             "constant": false,
             "functionSelector": "2604e18e",
-            "id": 180,
+            "id": 88,
             "mutability": "mutable",
             "name": "stakerClaimed",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "1359:46:1",
+            "scope": 91,
+            "src": "1359:46:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1213,28 +1213,28 @@
               "typeString": "mapping(address => uint256)"
             },
             "typeName": {
-              "id": 179,
+              "id": 87,
               "keyType": {
-                "id": 177,
+                "id": 85,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "1368:7:1",
+                "src": "1368:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "1359:25:1",
+              "src": "1359:25:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
                 "typeString": "mapping(address => uint256)"
               },
               "valueType": {
-                "id": 178,
+                "id": 86,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "1379:4:1",
+                "src": "1379:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
@@ -1247,13 +1247,13 @@
           {
             "constant": false,
             "functionSelector": "d54ad2a1",
-            "id": 182,
+            "id": 90,
             "mutability": "mutable",
             "name": "totalClaimed",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 183,
-            "src": "1410:24:1",
+            "scope": 91,
+            "src": "1410:24:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1261,10 +1261,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 181,
+              "id": 89,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "1410:4:1",
+              "src": "1410:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1274,24 +1274,24 @@
             "visibility": "public"
           }
         ],
-        "scope": 184,
-        "src": "242:1198:1"
+        "scope": 92,
+        "src": "242:1198:0"
       }
     ],
-    "src": "34:1406:1"
+    "src": "34:1406:0"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/C/Users/Josh Erickson/documents/github/lpstaking/contracts/MVTUniswapMiningStorage.sol",
+      "absolutePath": "/C/Users/Josh Erickson/Documents/GitHub/LPStaking/contracts/MVTUniswapMiningStorage.sol",
       "exportedSymbols": {
         "MVTUniswapMiningStorage": [
-          183
+          91
         ],
         "OwnableStorage": [
-          97
+          5
         ],
         "PausableStorage": [
-          100
+          8
         ]
       },
       "license": "MIT"
@@ -1299,18 +1299,18 @@
     "children": [
       {
         "attributes": {
-          "SourceUnit": 1042,
+          "SourceUnit": 950,
           "absolutePath": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
           "file": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
-          "scope": 184,
+          "scope": 92,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 93,
+        "id": 1,
         "name": "ImportDirective",
-        "src": "34:55:1"
+        "src": "34:55:0"
       },
       {
         "attributes": {
@@ -1321,9 +1321,9 @@
             ".0"
           ]
         },
-        "id": 94,
+        "id": 2,
         "name": "PragmaDirective",
-        "src": "93:23:1"
+        "src": "93:23:0"
       },
       {
         "attributes": {
@@ -1338,10 +1338,10 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            97
+            5
           ],
           "name": "OwnableStorage",
-          "scope": 184
+          "scope": 92
         },
         "children": [
           {
@@ -1350,7 +1350,7 @@
               "mutability": "mutable",
               "name": "_owner",
               "overrides": null,
-              "scope": 97,
+              "scope": 5,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "address",
@@ -1364,19 +1364,19 @@
                   "stateMutability": "nonpayable",
                   "type": "address"
                 },
-                "id": 95,
+                "id": 3,
                 "name": "ElementaryTypeName",
-                "src": "150:7:1"
+                "src": "150:7:0"
               }
             ],
-            "id": 96,
+            "id": 4,
             "name": "VariableDeclaration",
-            "src": "150:23:1"
+            "src": "150:23:0"
           }
         ],
-        "id": 97,
+        "id": 5,
         "name": "ContractDefinition",
-        "src": "120:57:1"
+        "src": "120:57:0"
       },
       {
         "attributes": {
@@ -1391,10 +1391,10 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            100
+            8
           ],
           "name": "PausableStorage",
-          "scope": 184
+          "scope": 92
         },
         "children": [
           {
@@ -1403,7 +1403,7 @@
               "mutability": "mutable",
               "name": "_paused",
               "overrides": null,
-              "scope": 100,
+              "scope": 8,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bool",
@@ -1416,19 +1416,19 @@
                   "name": "bool",
                   "type": "bool"
                 },
-                "id": 98,
+                "id": 6,
                 "name": "ElementaryTypeName",
-                "src": "213:4:1"
+                "src": "213:4:0"
               }
             ],
-            "id": 99,
+            "id": 7,
             "name": "VariableDeclaration",
-            "src": "213:21:1"
+            "src": "213:21:0"
           }
         ],
-        "id": 100,
+        "id": 8,
         "name": "ContractDefinition",
-        "src": "182:56:1"
+        "src": "182:56:0"
       },
       {
         "attributes": {
@@ -1443,10 +1443,10 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            183
+            91
           ],
           "name": "MVTUniswapMiningStorage",
-          "scope": 184
+          "scope": 92
         },
         "children": [
           {
@@ -1455,26 +1455,26 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "SafeMath",
-                  "referencedDeclaration": 538,
+                  "referencedDeclaration": 446,
                   "type": "library SafeMath"
                 },
-                "id": 101,
+                "id": 9,
                 "name": "UserDefinedTypeName",
-                "src": "286:8:1"
+                "src": "286:8:0"
               },
               {
                 "attributes": {
                   "name": "uint256",
                   "type": "uint256"
                 },
-                "id": 102,
+                "id": 10,
                 "name": "ElementaryTypeName",
-                "src": "299:7:1"
+                "src": "299:7:0"
               }
             ],
-            "id": 103,
+            "id": 11,
             "name": "UsingForDirective",
-            "src": "280:27:1"
+            "src": "280:27:0"
           },
           {
             "attributes": {
@@ -1483,7 +1483,7 @@
               "mutability": "constant",
               "name": "isMVTUniswapMining",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bool",
@@ -1495,9 +1495,9 @@
                   "name": "bool",
                   "type": "bool"
                 },
-                "id": 104,
+                "id": 12,
                 "name": "ElementaryTypeName",
-                "src": "313:4:1"
+                "src": "313:4:0"
               },
               {
                 "attributes": {
@@ -1512,14 +1512,14 @@
                   "type": "bool",
                   "value": "true"
                 },
-                "id": 105,
+                "id": 13,
                 "name": "Literal",
-                "src": "355:4:1"
+                "src": "355:4:0"
               }
             ],
-            "id": 106,
+            "id": 14,
             "name": "VariableDeclaration",
-            "src": "313:46:1"
+            "src": "313:46:0"
           },
           {
             "attributes": {
@@ -1528,7 +1528,7 @@
               "mutability": "mutable",
               "name": "initiated",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bool",
@@ -1540,9 +1540,9 @@
                   "name": "bool",
                   "type": "bool"
                 },
-                "id": 107,
+                "id": 15,
                 "name": "ElementaryTypeName",
-                "src": "364:4:1"
+                "src": "364:4:0"
               },
               {
                 "attributes": {
@@ -1557,14 +1557,14 @@
                   "type": "bool",
                   "value": "false"
                 },
-                "id": 108,
+                "id": 16,
                 "name": "Literal",
-                "src": "388:5:1"
+                "src": "388:5:0"
               }
             ],
-            "id": 109,
+            "id": 17,
             "name": "VariableDeclaration",
-            "src": "364:29:1"
+            "src": "364:29:0"
           },
           {
             "attributes": {
@@ -1573,7 +1573,7 @@
               "mutability": "mutable",
               "name": "admin",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "address",
@@ -1587,14 +1587,14 @@
                   "stateMutability": "nonpayable",
                   "type": "address"
                 },
-                "id": 110,
+                "id": 18,
                 "name": "ElementaryTypeName",
-                "src": "420:7:1"
+                "src": "420:7:0"
               }
             ],
-            "id": 111,
+            "id": 19,
             "name": "VariableDeclaration",
-            "src": "420:20:1"
+            "src": "420:20:0"
           },
           {
             "attributes": {
@@ -1603,7 +1603,7 @@
               "mutability": "mutable",
               "name": "implementation",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "address",
@@ -1617,14 +1617,14 @@
                   "stateMutability": "nonpayable",
                   "type": "address"
                 },
-                "id": 112,
+                "id": 20,
                 "name": "ElementaryTypeName",
-                "src": "445:7:1"
+                "src": "445:7:0"
               }
             ],
-            "id": 113,
+            "id": 21,
             "name": "VariableDeclaration",
-            "src": "445:29:1"
+            "src": "445:29:0"
           },
           {
             "attributes": {
@@ -1633,7 +1633,7 @@
               "mutability": "mutable",
               "name": "LPToken",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "contract ERC20",
@@ -1645,17 +1645,17 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "ERC20",
-                  "referencedDeclaration": 1041,
+                  "referencedDeclaration": 949,
                   "type": "contract ERC20"
                 },
-                "id": 114,
+                "id": 22,
                 "name": "UserDefinedTypeName",
-                "src": "483:5:1"
+                "src": "483:5:0"
               }
             ],
-            "id": 115,
+            "id": 23,
             "name": "VariableDeclaration",
-            "src": "483:20:1"
+            "src": "483:20:0"
           },
           {
             "attributes": {
@@ -1664,7 +1664,7 @@
               "mutability": "mutable",
               "name": "MVTToken",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "contract ERC20",
@@ -1676,17 +1676,17 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "ERC20",
-                  "referencedDeclaration": 1041,
+                  "referencedDeclaration": 949,
                   "type": "contract ERC20"
                 },
-                "id": 116,
+                "id": 24,
                 "name": "UserDefinedTypeName",
-                "src": "508:5:1"
+                "src": "508:5:0"
               }
             ],
-            "id": 117,
+            "id": 25,
             "name": "VariableDeclaration",
-            "src": "508:21:1"
+            "src": "508:21:0"
           },
           {
             "attributes": {
@@ -1695,7 +1695,7 @@
               "mutability": "mutable",
               "name": "startMiningBlockNum",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -1707,9 +1707,9 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 118,
+                "id": 26,
                 "name": "ElementaryTypeName",
-                "src": "538:4:1"
+                "src": "538:4:0"
               },
               {
                 "attributes": {
@@ -1724,14 +1724,14 @@
                   "type": "int_const 0",
                   "value": "0"
                 },
-                "id": 119,
+                "id": 27,
                 "name": "Literal",
-                "src": "572:1:1"
+                "src": "572:1:0"
               }
             ],
-            "id": 120,
+            "id": 28,
             "name": "VariableDeclaration",
-            "src": "538:35:1"
+            "src": "538:35:0"
           },
           {
             "attributes": {
@@ -1740,7 +1740,7 @@
               "mutability": "mutable",
               "name": "totalMiningBlockNum",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -1752,9 +1752,9 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 121,
+                "id": 29,
                 "name": "ElementaryTypeName",
-                "src": "578:4:1"
+                "src": "578:4:0"
               },
               {
                 "attributes": {
@@ -1769,14 +1769,14 @@
                   "type": "int_const 2400000",
                   "value": "2400000"
                 },
-                "id": 122,
+                "id": 30,
                 "name": "Literal",
-                "src": "612:7:1"
+                "src": "612:7:0"
               }
             ],
-            "id": 123,
+            "id": 31,
             "name": "VariableDeclaration",
-            "src": "578:41:1"
+            "src": "578:41:0"
           },
           {
             "attributes": {
@@ -1785,7 +1785,7 @@
               "mutability": "mutable",
               "name": "endMiningBlockNum",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -1797,9 +1797,9 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 124,
+                "id": 32,
                 "name": "ElementaryTypeName",
-                "src": "624:4:1"
+                "src": "624:4:0"
               },
               {
                 "attributes": {
@@ -1822,13 +1822,13 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 120,
+                      "referencedDeclaration": 28,
                       "type": "uint256",
                       "value": "startMiningBlockNum"
                     },
-                    "id": 125,
+                    "id": 33,
                     "name": "Identifier",
-                    "src": "656:19:1"
+                    "src": "656:19:0"
                   },
                   {
                     "attributes": {
@@ -1836,23 +1836,23 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 123,
+                      "referencedDeclaration": 31,
                       "type": "uint256",
                       "value": "totalMiningBlockNum"
                     },
-                    "id": 126,
+                    "id": 34,
                     "name": "Identifier",
-                    "src": "678:19:1"
+                    "src": "678:19:0"
                   }
                 ],
-                "id": 127,
+                "id": 35,
                 "name": "BinaryOperation",
-                "src": "656:41:1"
+                "src": "656:41:0"
               }
             ],
-            "id": 128,
+            "id": 36,
             "name": "VariableDeclaration",
-            "src": "624:73:1"
+            "src": "624:73:0"
           },
           {
             "attributes": {
@@ -1861,7 +1861,7 @@
               "mutability": "mutable",
               "name": "MVTPerBlock",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -1873,9 +1873,9 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 129,
+                "id": 37,
                 "name": "ElementaryTypeName",
-                "src": "702:4:1"
+                "src": "702:4:0"
               },
               {
                 "attributes": {
@@ -1890,14 +1890,14 @@
                   "type": "int_const 83333333333333333",
                   "value": "83333333333333333"
                 },
-                "id": 130,
+                "id": 38,
                 "name": "Literal",
-                "src": "728:17:1"
+                "src": "728:17:0"
               }
             ],
-            "id": 131,
+            "id": 39,
             "name": "VariableDeclaration",
-            "src": "702:43:1"
+            "src": "702:43:0"
           },
           {
             "attributes": {
@@ -1906,7 +1906,7 @@
               "mutability": "constant",
               "name": "stakeInitialIndex",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -1918,9 +1918,9 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 132,
+                "id": 40,
                 "name": "ElementaryTypeName",
-                "src": "754:4:1"
+                "src": "754:4:0"
               },
               {
                 "attributes": {
@@ -1935,14 +1935,14 @@
                   "type": "int_const 1000...(29 digits omitted)...0000",
                   "value": "1e36"
                 },
-                "id": 133,
+                "id": 41,
                 "name": "Literal",
-                "src": "795:4:1"
+                "src": "795:4:0"
               }
             ],
-            "id": 134,
+            "id": 42,
             "name": "VariableDeclaration",
-            "src": "754:45:1"
+            "src": "754:45:0"
           },
           {
             "attributes": {
@@ -1951,7 +1951,7 @@
               "mutability": "mutable",
               "name": "miningStateBlock",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -1963,9 +1963,9 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 135,
+                "id": 43,
                 "name": "ElementaryTypeName",
-                "src": "808:4:1"
+                "src": "808:4:0"
               },
               {
                 "attributes": {
@@ -1973,18 +1973,18 @@
                   "overloadedDeclarations": [
                     null
                   ],
-                  "referencedDeclaration": 120,
+                  "referencedDeclaration": 28,
                   "type": "uint256",
                   "value": "startMiningBlockNum"
                 },
-                "id": 136,
+                "id": 44,
                 "name": "Identifier",
-                "src": "839:19:1"
+                "src": "839:19:0"
               }
             ],
-            "id": 137,
+            "id": 45,
             "name": "VariableDeclaration",
-            "src": "808:50:1"
+            "src": "808:50:0"
           },
           {
             "attributes": {
@@ -1993,7 +1993,7 @@
               "mutability": "mutable",
               "name": "miningStateIndex",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -2005,9 +2005,9 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 138,
+                "id": 46,
                 "name": "ElementaryTypeName",
-                "src": "863:4:1"
+                "src": "863:4:0"
               },
               {
                 "attributes": {
@@ -2015,24 +2015,24 @@
                   "overloadedDeclarations": [
                     null
                   ],
-                  "referencedDeclaration": 134,
+                  "referencedDeclaration": 42,
                   "type": "uint256",
                   "value": "stakeInitialIndex"
                 },
-                "id": 139,
+                "id": 47,
                 "name": "Identifier",
-                "src": "894:17:1"
+                "src": "894:17:0"
               }
             ],
-            "id": 140,
+            "id": 48,
             "name": "VariableDeclaration",
-            "src": "863:48:1"
+            "src": "863:48:0"
           },
           {
             "attributes": {
               "canonicalName": "MVTUniswapMiningStorage.Stake",
               "name": "Stake",
-              "scope": 183,
+              "scope": 91,
               "visibility": "public"
             },
             "children": [
@@ -2042,7 +2042,7 @@
                   "mutability": "mutable",
                   "name": "amount",
                   "overrides": null,
-                  "scope": 151,
+                  "scope": 59,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -2055,14 +2055,14 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 141,
+                    "id": 49,
                     "name": "ElementaryTypeName",
-                    "src": "943:4:1"
+                    "src": "943:4:0"
                   }
                 ],
-                "id": 142,
+                "id": 50,
                 "name": "VariableDeclaration",
-                "src": "943:11:1"
+                "src": "943:11:0"
               },
               {
                 "attributes": {
@@ -2070,7 +2070,7 @@
                   "mutability": "mutable",
                   "name": "lockedUntil",
                   "overrides": null,
-                  "scope": 151,
+                  "scope": 59,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -2083,14 +2083,14 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 143,
+                    "id": 51,
                     "name": "ElementaryTypeName",
-                    "src": "961:4:1"
+                    "src": "961:4:0"
                   }
                 ],
-                "id": 144,
+                "id": 52,
                 "name": "VariableDeclaration",
-                "src": "961:16:1"
+                "src": "961:16:0"
               },
               {
                 "attributes": {
@@ -2098,7 +2098,7 @@
                   "mutability": "mutable",
                   "name": "lockPeriod",
                   "overrides": null,
-                  "scope": 151,
+                  "scope": 59,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -2111,14 +2111,14 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 145,
+                    "id": 53,
                     "name": "ElementaryTypeName",
-                    "src": "984:4:1"
+                    "src": "984:4:0"
                   }
                 ],
-                "id": 146,
+                "id": 54,
                 "name": "VariableDeclaration",
-                "src": "984:15:1"
+                "src": "984:15:0"
               },
               {
                 "attributes": {
@@ -2126,7 +2126,7 @@
                   "mutability": "mutable",
                   "name": "stakePower",
                   "overrides": null,
-                  "scope": 151,
+                  "scope": 59,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -2139,14 +2139,14 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 147,
+                    "id": 55,
                     "name": "ElementaryTypeName",
-                    "src": "1006:4:1"
+                    "src": "1006:4:0"
                   }
                 ],
-                "id": 148,
+                "id": 56,
                 "name": "VariableDeclaration",
-                "src": "1006:15:1"
+                "src": "1006:15:0"
               },
               {
                 "attributes": {
@@ -2154,7 +2154,7 @@
                   "mutability": "mutable",
                   "name": "exists",
                   "overrides": null,
-                  "scope": 151,
+                  "scope": 59,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "bool",
@@ -2167,19 +2167,19 @@
                       "name": "bool",
                       "type": "bool"
                     },
-                    "id": 149,
+                    "id": 57,
                     "name": "ElementaryTypeName",
-                    "src": "1028:4:1"
+                    "src": "1028:4:0"
                   }
                 ],
-                "id": 150,
+                "id": 58,
                 "name": "VariableDeclaration",
-                "src": "1028:11:1"
+                "src": "1028:11:0"
               }
             ],
-            "id": 151,
+            "id": 59,
             "name": "StructDefinition",
-            "src": "924:121:1"
+            "src": "924:121:0"
           },
           {
             "attributes": {
@@ -2188,7 +2188,7 @@
               "mutability": "mutable",
               "name": "stakes",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => struct MVTUniswapMiningStorage.Stake[])",
@@ -2206,9 +2206,9 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 152,
+                    "id": 60,
                     "name": "ElementaryTypeName",
-                    "src": "1060:7:1"
+                    "src": "1060:7:0"
                   },
                   {
                     "attributes": {
@@ -2220,27 +2220,27 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "Stake",
-                          "referencedDeclaration": 151,
+                          "referencedDeclaration": 59,
                           "type": "struct MVTUniswapMiningStorage.Stake"
                         },
-                        "id": 153,
+                        "id": 61,
                         "name": "UserDefinedTypeName",
-                        "src": "1071:5:1"
+                        "src": "1071:5:0"
                       }
                     ],
-                    "id": 154,
+                    "id": 62,
                     "name": "ArrayTypeName",
-                    "src": "1071:7:1"
+                    "src": "1071:7:0"
                   }
                 ],
-                "id": 155,
+                "id": 63,
                 "name": "Mapping",
-                "src": "1051:28:1"
+                "src": "1051:28:0"
               }
             ],
-            "id": 156,
+            "id": 64,
             "name": "VariableDeclaration",
-            "src": "1051:42:1"
+            "src": "1051:42:0"
           },
           {
             "attributes": {
@@ -2249,7 +2249,7 @@
               "mutability": "mutable",
               "name": "stakeCount",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => uint256)",
@@ -2267,28 +2267,28 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 157,
+                    "id": 65,
                     "name": "ElementaryTypeName",
-                    "src": "1107:7:1"
+                    "src": "1107:7:0"
                   },
                   {
                     "attributes": {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 158,
+                    "id": 66,
                     "name": "ElementaryTypeName",
-                    "src": "1118:4:1"
+                    "src": "1118:4:0"
                   }
                 ],
-                "id": 159,
+                "id": 67,
                 "name": "Mapping",
-                "src": "1098:25:1"
+                "src": "1098:25:0"
               }
             ],
-            "id": 160,
+            "id": 68,
             "name": "VariableDeclaration",
-            "src": "1098:43:1"
+            "src": "1098:43:0"
           },
           {
             "attributes": {
@@ -2297,7 +2297,7 @@
               "mutability": "mutable",
               "name": "totalStaked",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -2310,14 +2310,14 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 161,
+                "id": 69,
                 "name": "ElementaryTypeName",
-                "src": "1146:4:1"
+                "src": "1146:4:0"
               }
             ],
-            "id": 162,
+            "id": 70,
             "name": "VariableDeclaration",
-            "src": "1146:23:1"
+            "src": "1146:23:0"
           },
           {
             "attributes": {
@@ -2326,7 +2326,7 @@
               "mutability": "mutable",
               "name": "totalStakedPower",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -2339,14 +2339,14 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 163,
+                "id": 71,
                 "name": "ElementaryTypeName",
-                "src": "1174:4:1"
+                "src": "1174:4:0"
               }
             ],
-            "id": 164,
+            "id": 72,
             "name": "VariableDeclaration",
-            "src": "1174:28:1"
+            "src": "1174:28:0"
           },
           {
             "attributes": {
@@ -2355,7 +2355,7 @@
               "mutability": "mutable",
               "name": "stakeHolders",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => uint256)",
@@ -2373,28 +2373,28 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 165,
+                    "id": 73,
                     "name": "ElementaryTypeName",
-                    "src": "1218:7:1"
+                    "src": "1218:7:0"
                   },
                   {
                     "attributes": {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 166,
+                    "id": 74,
                     "name": "ElementaryTypeName",
-                    "src": "1229:4:1"
+                    "src": "1229:4:0"
                   }
                 ],
-                "id": 167,
+                "id": 75,
                 "name": "Mapping",
-                "src": "1209:25:1"
+                "src": "1209:25:0"
               }
             ],
-            "id": 168,
+            "id": 76,
             "name": "VariableDeclaration",
-            "src": "1209:45:1"
+            "src": "1209:45:0"
           },
           {
             "attributes": {
@@ -2403,7 +2403,7 @@
               "mutability": "mutable",
               "name": "stakerPower",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => uint256)",
@@ -2421,28 +2421,28 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 169,
+                    "id": 77,
                     "name": "ElementaryTypeName",
-                    "src": "1268:7:1"
+                    "src": "1268:7:0"
                   },
                   {
                     "attributes": {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 170,
+                    "id": 78,
                     "name": "ElementaryTypeName",
-                    "src": "1279:4:1"
+                    "src": "1279:4:0"
                   }
                 ],
-                "id": 171,
+                "id": 79,
                 "name": "Mapping",
-                "src": "1259:25:1"
+                "src": "1259:25:0"
               }
             ],
-            "id": 172,
+            "id": 80,
             "name": "VariableDeclaration",
-            "src": "1259:44:1"
+            "src": "1259:44:0"
           },
           {
             "attributes": {
@@ -2451,7 +2451,7 @@
               "mutability": "mutable",
               "name": "stakerIndexes",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => uint256)",
@@ -2469,28 +2469,28 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 173,
+                    "id": 81,
                     "name": "ElementaryTypeName",
-                    "src": "1317:7:1"
+                    "src": "1317:7:0"
                   },
                   {
                     "attributes": {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 174,
+                    "id": 82,
                     "name": "ElementaryTypeName",
-                    "src": "1328:4:1"
+                    "src": "1328:4:0"
                   }
                 ],
-                "id": 175,
+                "id": 83,
                 "name": "Mapping",
-                "src": "1308:25:1"
+                "src": "1308:25:0"
               }
             ],
-            "id": 176,
+            "id": 84,
             "name": "VariableDeclaration",
-            "src": "1308:46:1"
+            "src": "1308:46:0"
           },
           {
             "attributes": {
@@ -2499,7 +2499,7 @@
               "mutability": "mutable",
               "name": "stakerClaimed",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => uint256)",
@@ -2517,28 +2517,28 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 177,
+                    "id": 85,
                     "name": "ElementaryTypeName",
-                    "src": "1368:7:1"
+                    "src": "1368:7:0"
                   },
                   {
                     "attributes": {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 178,
+                    "id": 86,
                     "name": "ElementaryTypeName",
-                    "src": "1379:4:1"
+                    "src": "1379:4:0"
                   }
                 ],
-                "id": 179,
+                "id": 87,
                 "name": "Mapping",
-                "src": "1359:25:1"
+                "src": "1359:25:0"
               }
             ],
-            "id": 180,
+            "id": 88,
             "name": "VariableDeclaration",
-            "src": "1359:46:1"
+            "src": "1359:46:0"
           },
           {
             "attributes": {
@@ -2547,7 +2547,7 @@
               "mutability": "mutable",
               "name": "totalClaimed",
               "overrides": null,
-              "scope": 183,
+              "scope": 91,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -2560,24 +2560,24 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 181,
+                "id": 89,
                 "name": "ElementaryTypeName",
-                "src": "1410:4:1"
+                "src": "1410:4:0"
               }
             ],
-            "id": 182,
+            "id": 90,
             "name": "VariableDeclaration",
-            "src": "1410:24:1"
+            "src": "1410:24:0"
           }
         ],
-        "id": 183,
+        "id": 91,
         "name": "ContractDefinition",
-        "src": "242:1198:1"
+        "src": "242:1198:0"
       }
     ],
-    "id": 184,
+    "id": 92,
     "name": "SourceUnit",
-    "src": "34:1406:1"
+    "src": "34:1406:0"
   },
   "compiler": {
     "name": "solc",
@@ -2585,7 +2585,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-02T17:19:02.566Z",
+  "updatedAt": "2021-03-02T17:41:27.258Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
